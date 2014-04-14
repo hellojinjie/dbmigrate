@@ -11,6 +11,7 @@ import java.util.List;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 
+@Deprecated
 public class JDBCScriptRunner implements ScriptRunner {
 
 	@Override
