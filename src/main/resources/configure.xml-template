@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbmigrate>
+	
+	<!-- directory contains migration files -->
+	<migrations>./migrations</migrations>
+
+	<!-- databases that you want to apply the migrations -->
+	<databases>
+
+		<apply-to name="local-dev" default="true">
+			<host>127.0.0.1</host>
+			<port>3306</port>
+			<database>v2_realtime_template</database>
+			<user>root</user>
+			<password>123456</password>
+		</apply-to>
+		
+		<apply-to name="local-dev2" default="true">
+			<host>127.0.0.1</host>
+			<port>3306</port>
+			<database>v2_realtime_jin</database>
+			<user>root</user>
+			<password>123456</password>
+		</apply-to>
+
+		<apply-to name="realtime_v2_jin">
+			<host>172.16.0.237</host>
+			<database>realtime_v2_jin</database>
+			<user>root</user>
+			<password>111111</password>
+		</apply-to>
+
+	</databases>
+
+</dbmigrate>
